@@ -1,0 +1,24 @@
+{
+    "name": "sparkinzy\/laravel-schedule-command",
+    "description": "命令中直接定义定时任务，避免Kernel中大量定义定时任务",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "sparkinzy",
+            "email": "sparkinzy@163.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Sparkinzy\\LaravelScheduleCommand\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers":[
+                "Sparkinzy\\LaravelScheduleCommand\\ServiceProvider"
+            ]
+        }
+    }
+}
