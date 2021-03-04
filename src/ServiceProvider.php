@@ -3,7 +3,6 @@
 namespace Sparkinzy\LaravelScheduleCommand;
 
 use ReflectionClass;
-use Illuminate\Console\Command;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
 use Sparkinzy\LaravelScheduleCommand\Commands\ScheduleCommand;

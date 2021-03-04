@@ -9,6 +9,9 @@
         }
     ],
     "require": {
+        "illuminate/support": "^6.2",
+        "illuminate/console": "^6.2",
+        "symfony/finder": "^5.2"
     },
     "autoload": {
         "psr-4": {
