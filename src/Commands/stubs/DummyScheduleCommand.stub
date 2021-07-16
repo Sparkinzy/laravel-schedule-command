@@ -1,0 +1,44 @@
+<?php
+namespace App\Console\Commands;
+
+use Illuminate\Console\Scheduling\Schedule;
+use Sparkinzy\LaravelScheduleCommand\Commands\ScheduleCommand;
+
+class DummyClass extends ScheduleCommand
+{
+    /**
+     * The name and signature of the console command.
+     *
+     * @var string
+     */
+    protected $signature = 'command:name';
+    /**
+     * The console command description.
+     *
+     * @var string
+     */
+    protected $description = '测试命令自带定时任务配置';
+    /**
+     * Execute the console command.
+     *
+     * @return mixed
+     */
+    public function handle()
+    {
+        # @todo handle
+    }
+
+    /**
+     * @param Schedule $schedule
+     * 此命令每分钟执行一次
+     */
+    public function schedule(Schedule $schedule)
+    {
+        # 定时任务执行时带参数
+        #$schedule->command(static::class,['param'=>'one'])
+        #            ->everyMinute()
+        #            ->runInBackground();
+    }
+
+
+}
